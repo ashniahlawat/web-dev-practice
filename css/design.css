@@ -1,0 +1,262 @@
+/********** Base styles **********/
+body{
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
+  background-color:black;
+  color: black;
+  animation: fadeIn 3s;
+}
+
+
+/*******Header*******/
+
+
+#header-nav{
+  background-color: #4c3563;
+  border-radius: 0;
+}
+
+.navbar-header {/*
+    float: left;*/
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.navbar-brand {
+  padding-top: 0px;
+  padding-left: 0px;
+
+  margin-bottom: 10px;
+}
+
+/*.navbar-brand{
+  padding-top: 0px;
+  padding-left: 0px;
+  margin: auto;
+
+}*/
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand h1{
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+}  
+
+
+#logo-img {
+  background: url("C:/Users/anuah/OneDrive/Desktop/MY PROJECT/pngfind.com-sphinx-png-726062.png") no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+#logo-anchor{
+  position: absolute;
+  top:42%;
+  left: 42%;
+}
+
+#intro{
+  font-family: 'Cedarville Cursive', cursive;
+  color: aliceblue;
+  position: absolute;
+  top: 60%;
+  margin: auto;
+  font-size: 2em ;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 33%;
+}
+
+
+/***/
+.container-fluid {
+    padding-top: 10%;
+}
+
+button{
+  background-color: lavender;
+  color: black;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  border-radius: 9px;
+  border: 3px solid black;
+}
+
+#learn, #test{
+  margin-left: 7%;
+  margin-right: 5%;
+  margin-top: 10px;
+  animation: fadeIn 3s;
+}
+
+input{
+  position: relative;
+  background-color: lavender;
+  border: 1px solid #ffd700;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom:10px;
+  margin-left: 40%;
+  margin-right: 5px;
+  font-size:1.424em;
+  opacity: 1;
+  border-radius: 2px;
+}
+
+input:focus{
+  box-shadow: 0 0 10px #ffd700;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+#Greeting{
+  position: absolute;
+  top:25%;
+  left: 46%;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.3em;
+  color: #a68bc1;
+}
+
+#NextLT, #Go{
+  font-size: 1.5em;
+  width: 100px;
+}
+
+#qLabel{
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  position:absolute;
+  top:25%;
+  left: 40%;
+  color: #ffd700;
+}
+
+#question{
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  position:absolute;
+  top:30%;
+  left: 46%;
+  color: #ffd700;
+  font-weight: bold;
+  background-color: black;
+}
+
+#answer-input{
+  position: relative;
+  top: 215px;
+}
+#NextQ{
+  position: relative;
+  top: 215px;
+  font-size: 1.5em;
+}
+
+.result{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  color: #a68bc1;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  font-size: 2em;
+
+}
+.WRONG{
+  color: darkred;
+}
+.Incorrect{
+  color: darkred;
+  left: 40%;
+}
+.Correct{
+  color: green;
+}
+
+.testresult{
+  animation-name: example;
+  animation-duration: 3s;
+  left: 33%;
+}
+.END{
+  animation-name: example;
+  animation-duration: 3s;
+  left: 47%;
+}
+
+
+
+/**Test**/
+.TestButtons{
+  position: absolute;
+  left: 39%;
+  font-size: 1.2em;
+  background-color: #605578;
+  color: white;
+  margin: auto;
+  width: 22%;
+  height: 9%;
+  border-color: #a999b0;
+  animation: fadeIn 1.5s;
+
+}
+
+.TestButtons:hover{
+  opacity: 1;
+  box-shadow: 0 0 10px whitesmoke;
+}
+
+#MixedMultiTable{
+  top: 40%;
+}
+#ChoiceMultiTable{
+  top: 54%;
+}
+
+
+#testQ{
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  position:absolute;
+  top:25%;
+  left: 44.5%;
+  color: #ffd700;
+}
+
+
+
+@keyframes example {
+  25%  {color:blue;}
+  50%  {color:lightsalmon;}
+  100% {color:yellow;}
+}
+
+
+/**MEDIA QUERIES**/
+/********** Desktop only **********/
+@media (min-width: 992px){
+
+}
+  
+/********** Tablets only **********/
+@media (min-width: 768px) and (max-width:991px) {
+
+}
+
+@media (min-width: 480px) and (max-width:634px){
+  input{
+    margin-left: 20%;
+  }
+}
+
